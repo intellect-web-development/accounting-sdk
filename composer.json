@@ -1,0 +1,24 @@
+{
+    "name": "intellect-web-development/accounting-sdk",
+    "description": "HTTP-клиент универсального сервиса Accounting (учёт средств: счета, баланс, операции)",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "IWD\\AccountingSdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IWD\\AccountingSdk\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.3",
+        "symfony/http-client": "^7.1 || ^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    }
+}

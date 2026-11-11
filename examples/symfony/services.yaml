@@ -1,0 +1,9 @@
+# Фрагмент config/services.yaml продукта после opt-in Accounting.
+# Полный чеклист: sibling accounting/INTEGRATION.md
+
+services:
+    IWD\AccountingSdk\AccountingClient:
+        arguments:
+            $httpClient: '@http_client'
+            $baseUrl: '%env(ACCOUNTING_BASE_URL)%'
+            $token: '%env(PLATFORM_SERVICE_TOKEN)%'
