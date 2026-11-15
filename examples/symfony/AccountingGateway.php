@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\Common\Accounting;
+namespace IWD\AccountingSdk\Examples\Symfony;
 
 use IWD\AccountingSdk\Account;
 use IWD\AccountingSdk\AccountingApiException;
@@ -15,7 +15,7 @@ use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 /**
  * Пример адаптера продукта: единственная точка связи с Accounting.
- * Скопировать в продукт при opt-in; домен AccountingClient не импортирует.
+ * В продукте копируйте в App\Common\Accounting (или свой BC) при opt-in; домен AccountingClient не импортирует.
  *
  * Недоступность сервиса превращается в AccountingUnavailableHttpException (в продукте — 502): баланс неизвестен,
  * ничего не списывается. Прикладные ошибки (AccountingApiException) пробрасываются как есть: продукт решает, что ответить.
