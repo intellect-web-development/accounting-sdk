@@ -3,3 +3,6 @@
 /composer.lock
 /.phpunit.cache/
 /.phpunit.result.cache
+.DS_Store
+._*
+**/.DS_Store
