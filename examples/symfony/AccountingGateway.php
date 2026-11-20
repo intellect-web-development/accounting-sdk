@@ -15,7 +15,7 @@ use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 /**
  * Пример адаптера продукта: единственная точка связи с Accounting.
- * В продукте копируйте в App\Common\Accounting (или свой BC) при opt-in; домен AccountingClient не импортирует.
+ * В продукте копируйте в App\PlatformProjection\Accounting (или свой BC) при opt-in; домен AccountingClient не импортирует.
  *
  * Недоступность сервиса превращается в AccountingUnavailableHttpException (в продукте — 502): баланс неизвестен,
  * ничего не списывается. Прикладные ошибки (AccountingApiException) пробрасываются как есть: продукт решает, что ответить.
